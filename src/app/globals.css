@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+:root {
+  --color-primary: #033884;
+  --font-yekan: "yekanBakh";
+}
+
+body {
+  font-family: var(--font-yekan);
+  background-color: var(--primary-bg);
+  color: var(--primary-text);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-header);
+}
+
+.container {
+  max-width: min(100%, 1328px, 1440px, 1600px);
+  @apply w-full px-4 my-10 mx-auto;
+}
+
+.bg {
+  background-color: var(--color-primary);
+}
+
+.applicationContainer {
+  background-image: linear-gradient(
+    rgba(115, 202, 235, 0.38),
+    rgba(115, 202, 235, 0.14)
+  );
+  border-radius: 12px;
+  padding: 16px 8px;
+}
