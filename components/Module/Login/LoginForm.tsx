@@ -35,7 +35,7 @@ const LoginForm: React.FC = () => {
         <div className="flex justify-center items-center">
           <Link
             href="/Login"
-            className="underline text-blue-600 hover:text-blue-800"
+            className="underline text-blue-600 hover:text-primary-dark"
           >
             فراموشی رمز عبور
           </Link>
@@ -43,7 +43,7 @@ const LoginForm: React.FC = () => {
 
         <button
           type="submit"
-          className="w-full text-white p-3 rounded-lg bg-[#033884] hover:bg-[#022c6a] transition-colors font-semibold"
+          className="w-full text-white p-3 rounded-lg bg-primary hover:bg-primary transition-colors font-semibold"
         >
           ورود
         </button>

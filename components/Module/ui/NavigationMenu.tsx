@@ -30,8 +30,8 @@ const NavigationMenu: React.FC = () => {
             href={item.link}
             className={`relative flex items-center gap-2  transition-colors duration-300 ${
               isactiv
-                ? "text-[#033884] font-bold border-b-1 "
-                : "hover:text-[#033884] text-gray-700"
+                ? "text-primary font-bold border-b-1 "
+                : "hover:text-primary text-gray-700"
             }`}
           >
             <span className="text-xl">{item.icon}</span>

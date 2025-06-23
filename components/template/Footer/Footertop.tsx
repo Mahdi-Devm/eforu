@@ -25,8 +25,7 @@ function Footertop() {
             />
             <button
               type="submit"
-              className="absolute inset-y-0 left-0 flex items-center px-3 text-white rounded-md rounded-r-none"
-              style={{ backgroundColor: "#033884" }}
+              className="absolute inset-y-0 left-0 flex items-center px-3 text-white rounded-md rounded-r-none bg-primary"
             >
               <BsSend />
             </button>

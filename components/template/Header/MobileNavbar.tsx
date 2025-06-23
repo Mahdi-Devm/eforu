@@ -24,15 +24,15 @@ function MobileNavbar() {
   return (
     <nav
       aria-label="ناوبری موبایل"
-      className="fixed bottom-0 left-0 right-0 bg-white border-t border-[#033884] shadow-inner md:hidden z-50"
+      className="fixed bottom-0 left-0 right-0 bg-white border-t border-primary shadow-inner md:hidden z-50"
     >
-      <ul className="flex justify-around items-center py-3 text-[#033884]">
+      <ul className="flex justify-around items-center py-3 text-primary">
         {ListItemsHeader.map((item, index) => (
           <li key={index} className="flex flex-col items-center text-xs">
             <Link
               href={item.link}
               aria-label={item.title}
-              className="flex flex-col items-center text-[#033884] hover:text-[#516f99] focus:text-[#076eff] focus:outline-none transition-colors duration-300"
+              className="flex flex-col items-center text-primary hover:text-[#516f99] focus:text-[#076eff] focus:outline-none transition-colors duration-300"
               tabIndex={0}
             >
               <div className="mb-1">{item.icon}</div>

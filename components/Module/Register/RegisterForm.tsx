@@ -38,7 +38,7 @@ const RegisterForm: React.FC = () => {
 
         <button
           type="submit"
-          className="w-full text-white p-3 rounded-lg bg-[#033884] hover:bg-[#022c6a] transition-colors font-semibold"
+          className="w-full text-white p-3 rounded-lg bg-primary hover:bg-primary transition-colors font-semibold"
         >
           ثبت‌نام
         </button>

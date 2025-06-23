@@ -18,7 +18,7 @@ const AuthButton: React.FC<AuthButtonProps> = ({ className = "", onClick }) => {
   return (
     <button
       onClick={onClick || handleRedirect}
-      className={`flex items-center gap-2 bg-[#033884] hover:bg-[#022c6a] transition-colors text-white  rounded-lg px-5 py-2 shadow-lg select-none ${className}`}
+      className={`flex items-center gap-2 bg-primary hover:bg-[#022c6a] transition-colors text-white  rounded-lg px-5 py-2 shadow-lg select-none ${className}`}
     >
       <FiUser size={20} />
       ورود / ثبت‌نام

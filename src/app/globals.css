@@ -1,7 +1,11 @@
 @import "tailwindcss";
 
-:root {
+@theme {
   --color-primary: #033884;
+  --color-primary-dark: #022c6a;
+}
+
+:root {
   --font-yekan: "yekanBakh";
 }
 

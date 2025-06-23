@@ -8,7 +8,7 @@ const MobileAuthButton = ({ onClick }: Props) => {
   return (
     <button
       onClick={onClick}
-      className="flex md:hidden items-center gap-2 bg-[#033884] hover:bg-[#022c6a] transition-colors text-white rounded-lg px-5 py-2 shadow-lg select-none"
+      className="flex md:hidden items-center gap-2 bg-primary hover:bg-primary-dark transition-colors text-white rounded-lg px-5 py-2 shadow-lg select-none"
       aria-label="باز کردن منوی موبایل"
     >
       <FiUser size={20} />

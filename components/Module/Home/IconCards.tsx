@@ -15,7 +15,7 @@ const IconCards: React.FC<IconCardsProps> = ({ data }) => {
       {data.map(({ image, icon: Icon }) => (
         <div
           key={image}
-          className="w-full h-28 rounded-2xl shadow-md bg-white text-[#033884] flex flex-col items-center justify-center gap-3 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl cursor-pointer"
+          className="w-full h-28 rounded-2xl shadow-md bg-white text-primary flex flex-col items-center justify-center gap-3 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl cursor-pointer"
         >
           <Icon size={28} />
           <span className="text-sm font-semibold text-center">{image}</span>

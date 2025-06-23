@@ -13,10 +13,10 @@ const AppSection: React.FC = () => {
         />
       </div>
       <div className="text-center md:text-right max-w-md">
-        <h5 className="text-[#033884] font-semibold text-lg mb-2">
+        <h5 className="text-primary font-semibold text-lg mb-2">
           تنها یک کلیک با دنیایی از تخفیف‌ها فاصله داری
         </h5>
-        <h6 className="text-[#033884] text-sm leading-relaxed">
+        <h6 className="text-primary text-sm leading-relaxed">
           با نصب اپلیکیشن باشگاه مشتریان انتخاب هرجایی که باشید می‌توانید از
           تخفیف‌های شگفت انگیز استفاده کنید.
         </h6>

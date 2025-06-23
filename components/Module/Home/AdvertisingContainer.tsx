@@ -30,27 +30,11 @@ function AdvertisingContainer() {
   }, [fadeState]);
 
   return (
-    <div
-      style={{
-        backgroundColor: "#033884",
-        color: "white",
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        gap: "0.5rem",
-        padding: "0.25rem 0",
-        fontWeight: "600",
-        fontSize: "0.875rem",
-        minHeight: "2rem",
-      }}
-    >
+    <div className="bg-primary text-white flex justify-center items-center gap-2 py-1 font-semibold text-sm min-h-[2rem]">
       <h1
-        className={fadeState}
-        style={{
-          transition: "opacity 0.5s ease-in-out",
-          opacity: fadeState === "fade-in" ? 1 : 0,
-          margin: 0,
-        }}
+        className={`transition-opacity duration-500 ease-in-out m-0 ${
+          fadeState === "fade-in" ? "opacity-100" : "opacity-0"
+        }`}
       >
         {messages[index]}
       </h1>
