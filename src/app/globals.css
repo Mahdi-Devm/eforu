@@ -1,8 +1,7 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary: #033884;
-  --color-primary-dark: #022c6a;
+  --color-primary: #7453ec;
 }
 
 :root {
@@ -11,9 +10,10 @@
 
 body {
   font-family: var(--font-yekan);
-  background-color: var(--primary-bg);
-  color: var(--primary-text);
+  background-color: var(--color-primary);
   transition: background-color 0.3s ease, color 0.3s ease;
+  display: flex;
+  justify-content: center;
 }
 
 h1,
@@ -28,17 +28,4 @@ h6 {
 .container {
   max-width: min(100%, 1328px, 1440px, 1600px);
   @apply w-full px-4 my-10 mx-auto;
-}
-
-.bg {
-  background-color: var(--color-primary);
-}
-
-.applicationContainer {
-  background-image: linear-gradient(
-    rgba(115, 202, 235, 0.38),
-    rgba(115, 202, 235, 0.14)
-  );
-  border-radius: 12px;
-  padding: 16px 8px;
 }

@@ -1,12 +1,10 @@
-import Footer from "../../components/template/Footer/Footer";
-import LayoutHeader from "../../components/template/Header/LayoutHeader";
 import yekanBakh from "../../fonts/yekanBakh";
-import OfflineToast from "../../lib/OfflineToast";
+
 import "./globals.css";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "باشگاه مشتریان انتخاب",
+  title: "متن تستی",
   description: "تست",
   icons: {
     icon: "/icons/favicon.ico",
@@ -21,11 +19,9 @@ export default function RootLayout({
   return (
     <html lang="fa" dir="rtl" className={yekanBakh.variable}>
       <body>
-        <OfflineToast />
-        <LayoutHeader>
-          <main>{children}</main>
-        </LayoutHeader>
-        <Footer />
+        <main className="min-h-screen flex flex-col items-center justify-center p-4">
+          {children}
+        </main>
       </body>
     </html>
   );

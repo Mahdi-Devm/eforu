@@ -1,50 +1,15 @@
-import React from "react";
-import Container from "../../components/Module/container/Container";
-import Gift from "../../components/Module/Home/Gift";
-import Sliderheaderbaner from "../../components/Module/Home/Sliderheaderbaner";
-import ConHomePage from "../../components/Module/Home/ConHomePage";
-import {
-  fetchMobileBanners,
-  fetchRewardPoints,
-  fetchSiteBanners,
-} from "../../services/homeData";
-import { homeMetadata } from "../../lib/Metadata";
-import { headers } from "next/headers";
-import { isMobile } from "../../lib/IsMobile";
-export const metadata = homeMetadata;
-async function Home() {
-  const ua = (await headers()).get("user-agent");
-  const mobile = isMobile(ua || "");
+import ImageComponents from "../../components/ui/ImageComponents";
+import FormLogin from "../../components/login/FormLogin";
+import HeadInputForm from "../../components/login/HeadInputForm";
 
-  let dataRewardPoint = null;
-  let dataRewardPoints = null;
-  let errorReward = false;
-  let errorBanner = false;
-
-  try {
-    dataRewardPoint = await fetchRewardPoints();
-  } catch {
-    errorReward = true;
-  }
-
-  try {
-    dataRewardPoints = mobile
-      ? await fetchMobileBanners()
-      : await fetchSiteBanners();
-  } catch {
-    errorBanner = true;
-  }
-
+export default function LoginForm() {
   return (
-    <Container>
-      <Sliderheaderbaner
-        dataRewardPoints={dataRewardPoints}
-        hasError={errorBanner}
-      />
-      <Gift rewards={dataRewardPoint} hasError={errorReward} />
-      <ConHomePage />
-    </Container>
+    <div className="min-h-screen flex items-center justify-center  px-4">
+      <ImageComponents />
+      <div className="max-w-md w-full bg-white p-8 rounded-xl shadow-md">
+        <HeadInputForm />
+        <FormLogin />
+      </div>
+    </div>
   );
 }
-
-export default Home;
